@@ -1,0 +1,8 @@
+Module__,State__,datatype__,MaxCh__
+MotorCtrl,Idle,unsigned char,5
+,Dectect,char,
+,Learn,unsigned short,
+,Forward,short,
+,Backward,unsigned int,
+,stuck,int,
+,spdup,,
