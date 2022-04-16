@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1332</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>685</width>
+    <height>203</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>77888</width>
+    <height>88888</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>缠论分析器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../../.designer/backup/image/picture.ico</normaloff>../../../../../../../.designer/backup/image/picture.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget_Path">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_show">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>1171</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tip">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>630</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_NetWork">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>627</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>输入拉取网址 0:东方财富  1：新浪</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Code">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>630</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>请输入股票代号 例如： 000001</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Flt">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>630</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>输入需要采集的时刻图 例如：5 15 30 60 120 240</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Number">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>630</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>需要采集的K线数量</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_flash">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>620</y>
+      <width>92</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>拉取数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rmv_al">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>620</y>
+      <width>91</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>清理图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dellist">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>620</y>
+      <width>101</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>删除列表</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_flash_local">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>620</y>
+      <width>92</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>同步数据</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1332</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
